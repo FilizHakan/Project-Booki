@@ -1,0 +1,42 @@
+/* The body with the box-sizing proprety */
+body {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    background-color: black;
+	border: 3px solid black;
+	margin: 2px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* The header */
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* The navigation */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav li a {
+	list-style: none;
+	padding-left: 30px;
+}
+
+/* The main section */
+main {
+	margin-top: 0px;
+}
+
+
+
