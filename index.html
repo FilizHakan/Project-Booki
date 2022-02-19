@@ -3,29 +3,36 @@
     <head>
         <title>Booki</title>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Filiz Hakan">
+        <meta name="description" content="Trouvez des hébergements et des activités de votre choix">
+        <meta name="copywrite" content="© Booki.com">
+        <meta name="robots" content="none" >
         <link type="text/css" rel="stylesheet" href="./css/normalize.css" >
-        <link type="text/css" rel="stylesheet" href="./css/style.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" >
         <link rel="preconnect" href="https://fonts.googleapis.com" >
         <link rel="preconnect" href="https://fonts.gstatic.com" >
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" >
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link type="text/css" rel="stylesheet" href="./css/style.css" >
+        <link rel="icon" type="image/png" sizes="320x320" href="./assets/favicon/favicon-320x320.png">
     </head>
 
     <body>
-        <div id="container">
-            <!-- Header -->
+        <!-- Header -->
             <header>
-                <nav> 
-                    <img id="logo" src="./assets/logo/Booki.png" alt="Logo de l'agence" class="logo"/>   
-                    <ul class="nav-list">
-                        <li><a href="#accomodations">Hébergements</a></li>
-                        <li><a href="#activities">Activités</a></li>
-                    </ul>
-                </nav>
+                <div class="container">
+                    <div id="main-logo"> 
+                        <img srcset="./assets/logo/Booki.png, ./assets/logo/Booki@3x.png 3x" src="./assets/logo/Booki@3x.png" alt="Logo de l'agence Booki">   
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#accomodations" class="active">Hébergements</a></li>
+                            <li><a href="#activities">Activités</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
-        </div>
-
+           
             <main>
                 <div class="first-div">
                     <!-- First division -->
@@ -52,14 +59,14 @@
                     <div id="filter-container" class="filter-container">
                         <a class="name-filters" href="#">Filtres</a>
                     </div>
-                        <a class="filters" id="saving-filter" href="#"><span class="fas fa-money-bill-wave money-icon"></span>Économiques</a>
-                        <a class="filters" id="family-filter" href="#"><span class="fas fa-child family-icon"></span>Familial</a>
-                        <a class="filters" id="romantic-filter" href="#"><span class="fas fa-heart heart-icon"></span>Romantique</a>
-                        <a class="filters" id="animal-filter" href="#"><span class="fas fa-dog dog-icon"></span>Animaux autorisés</a>
+                        <a class="filters" href="#"><span class="fas fa-money-bill-wave money-icon"></span>Économiques</a>
+                        <a class="filters" href="#"><span class="fas fa-child family-icon"></span>Familial</a>
+                        <a class="filters" href="#"><span class="fas fa-heart heart-icon"></span>Romantique</a>
+                        <a class="filters" href="#"><span class="fas fa-dog dog-icon"></span>Animaux autorisés</a>
                     
                     <!-- Information section -->
                     <div class="info-container">
-                        <i class="fas fa-info info-icon"></i>    
+                        <span class="fas fa-info info-icon"></span>    
                         <div>
                         <a href="#">Plus de 500 logements sont disponibles dans cette ville</a>
                         </div>
@@ -77,7 +84,10 @@
                     <div class="three-row-containers">  
                         <div class="one-card-container">
                             <div class="acco-images">
-                                <img src="./assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge-la-cannebiere" />
+                                <img srcset="./assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg,
+                                ./assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 2x,
+                                ./assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 4x,
+                                ./assets/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 8x" src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Canebière">
                             </div>
 
                             <div class="card-body-acco">
@@ -99,7 +109,10 @@
 
                         <div class="one-card-container">
                             <div class="acco-images">
-                                <img src="./assets/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel-du-port" />
+                                <img srcset="./assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg,
+                                ./assets/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 2x,
+                                ./assets/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg 4x,
+                                ./assets/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg 8x" src="./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
                             </div>
 
                             <div class="card-body-acco">
@@ -121,7 +134,10 @@
 
                         <div class="one-card-container">
                             <div class="acco-images">
-                                <img src="./assets/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel-les-mouettes" />
+                                <img srcset="./assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg,
+                                ./assets/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 2x,
+                                ./assets/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 4x,
+                                ./assets/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 8x" src="./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
                             </div>
                             <div class="card-body-acco">
                                 <div class="card-title-acco">
@@ -145,7 +161,10 @@
                     <div class="three-row-containers">
                         <div class="one-card-container">
                             <div class="acco-images">
-                                <img src="./assets/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotel-du-port" />
+                                <img srcset="./assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg,
+                                ./assets/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 2x,
+                                ./assets/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg 4x,
+                                ./assets/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg 8x" src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                             </div>
                             <div class="card-body-acco">
                                 <div class="card-title-acco">
@@ -166,7 +185,10 @@
 
                         <div class="one-card-container">
                             <div class="acco-images">
-                                <img src="./assets/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="hotel-du-port" />
+                                <img srcset="./assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg,
+                                ./assets/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 2x,
+                                ./assets/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 4x,
+                                ./assets/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 8x" src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Auberge Le Panier">
                             </div>
                             <div class="card-body-acco">
                                 <div class="card-title-acco">
@@ -187,7 +209,10 @@
 
                         <div class="one-card-container">
                             <div class="acco-images">
-                                <img src="./assets/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotel-chez-amina" />
+                                <img srcset="./assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg,
+                                ./assets/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 2x,
+                                ./assets/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 4x,
+                                ./assets/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 8x" src="./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
                             </div>
                             <div class="card-body-acco">
                                 <div class="card-title-acco">
@@ -226,7 +251,10 @@
                         <div class="popular-container">
 
                             <div class="card-images">
-                                <img src="./assets/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotel-le-soleil-du-matin" />
+                                <img srcset="./assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg,
+                                ./assets/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 2x,
+                                ./assets/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 4x,
+                                ./assets/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 8x" src="./images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
                             </div>
 
                             <div class="card-body">
@@ -247,7 +275,10 @@
                    
                         <div class="popular-container">
                             <div class="card-images">
-                                <img src="./assets/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="au-coeur" />
+                                <img srcset="./assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg,
+                                ./assets/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 2x,
+                                ./assets/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg 4x,
+                                ./assets/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg 8x" src="./images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
                             </div>
 
                             <div class="card-body">
@@ -268,7 +299,10 @@
 
                         <div class="popular-container">
                             <div class="card-images">
-                                <img src="./assets/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel-tout-bleu"/>
+                                <img srcset="./assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg,
+                                ./assets/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 2x,
+                                ./assets/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg 4x,
+                                ./assets/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg 8x" src="./images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
                             </div>
 
                             <div class="card-body">
@@ -300,7 +334,10 @@
                     <div class="act-column">
                         <div class="single-box">
                             <div>
-                                <img class="tall-image" src="./assets/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux-port" />
+                                <img class="tall-image" srcset="./assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg,
+                                ./assets/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 2x,
+                                ./assets/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 4x,
+                                ./assets/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 8x" src="./images/hebergements/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
                             </div>
                             <div class="name-item">
                                 <h3>Vieux Port</h3>
@@ -312,7 +349,10 @@
 
                             <div class="single-box">
                                 <div>
-                                    <img class="two-image" src="./assets/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="vieux-port" />
+                                    <img class="two-image" srcset="./assets/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg,
+                                    ./assets/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 2x,
+                                    ./assets/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg 4x,
+                                    ./assets/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg 8x" src="./images/hebergements/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                                 </div>
                                 <div class="name-item">
                                     <h3>Fort de Pomègues</h3>
@@ -321,7 +361,10 @@
                     
                             <div class="single-box">
                                 <div>
-                                    <img class="three-image" src="./assets/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="iles-frioul" />
+                                    <img class="three-image" srcset="./assets/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg,
+                                    ./assets/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 2x,
+                                    ./assets/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 4x,
+                                    ./assets/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 8x" src="./images/hebergements/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
                                 </div>
                                 <div class="name-item">
                                     <h3>îles du Frioul</h3>
@@ -367,31 +410,28 @@
             </section>
         </main>
 
-        <footer id="footer-section">
-            <div class="footer-column">
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
                     <h4>A propos</h4>
-                <div>
                     <ul>
                         <li>Fonctionnement du site</li>
                         <li>Conditions générales de vente</li>
                         <li>Données et confidentialité</li>
                     </ul>
                 </div>
-            </div>
+            
 
-            <div class="footer-column">    
+                <div class="footer-column">    
                     <h4> Nos hébergements</h4>
-                <div>
                     <ul>
                         <li>Charte qualité</li>
                         <li>Soumettre votre hôtel</li>
                     </ul> 
-                </div>
-            </div>                                        
+                </div>                                        
 
-            <div class="footer-column">
+                <div class="footer-column">
                     <h4> Assistance</h4>
-                <div>
                     <ul>
                         <li>Centre d'aide</li>
                         <li>Nous contacter</li>

@@ -5,58 +5,90 @@
    }
 
 body {
-    max-width: 100%;
-    background-color: white;
     font-family: 'Raleway', sans-serif;
     margin: 0;
-}
-
-#container {
-    width: 100%;
-}
-
-/* HEADER DESKTOP */
-header {
-    margin: 30px 50px 0 50px;
+    background-color: #ffffff;
 }
 
 /* LOGO DESKTOP */ 
 
-#logo {
-    height: 60px;
-    padding: 10px;
+  header #main-logo {
+    padding: 20px 50px;
   }
 
-/* NAVIGATION DESKTOP */
-nav {
+  header #main-logo img {
+    width: 80px;
+  }
+
+/* HEADER DESKTOP */
+
+  header {
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+  header .container {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-nav ul {
-	display: flex;
+  header li {
     list-style: none;
-    align-items: center;
-}
-
-.nav-list a {
-    color: black;
+  }
+  
+  header a {
+    display: block;
+    width: 100%;
     text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-    padding-left: 30px;
-    padding-right: 30px;
-}
+    color: #000000;
+    text-align: center;
+    font-weight: 600;
+  }
 
-nav li {
-    margin-right: 30px;
-}
+  a:hover {
+    color: #0065FC;
+  }
+  
+  header a:hover {
+    color: #0065FC;
+  }
 
-nav ul a:hover {
-    color:#0065FC;
-    border-top: 2px solid #0065FC;
-    padding-top: 49px;
-    margin-top: 2px;
+
+  header .container nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0 50px;
+  }
+  
+  header .container nav ul li a {
+    display: inline-block;
+    padding: 30px 20px 10px 20px;
+    padding-bottom: 15px;
+    border-top: 3px solid;
+    border-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  header .container nav ul li a:hover {
+    color: inherit;
+    border-color: #0065FC!important;
+  }
+  
+  header .container nav ul li a.active {
+    color: #0065FC;
+    border-color: #0065FC!important;
+  }
+
+  
+/* MAIN DESKTOP */ 
+
+main {
+    flex-grow: 1;
+    width: 100%;
 }
 
 /* FIRST DIVISION DESKTOP */
@@ -73,6 +105,12 @@ margin-block-start: 0;
 margin-block-end: 0;
 
 }
+
+/* Title H1 */
+h1 {
+    font-size: 21px;
+}
+
 
 /* SEARCH BAR DESKTOP */
 
@@ -106,6 +144,7 @@ margin-block-end: 0;
     border: 0;
     padding: 0 16px;
     flex: 1;
+    background-color: transparent;
   }
 
   .search-button i {
@@ -149,7 +188,7 @@ margin-block-end: 0;
 
   .filters {
     text-decoration: none;
-    padding: 15px 15px 14px 0;
+    padding: 13px 15px 13px 0;
     display: inline-flex;
     flex: 1 1 300px;
     position: relative;
@@ -256,37 +295,23 @@ a {
     width: 66%;
     border-radius: 30px;
     margin-right: 50px;
-    padding: 0% 1.5% 1% 1.5%;
 }
 
-/* H2 "Les plus populaires" + ICON DESKTOP */
-
-.aside-hi {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 25px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.chart-icon::before {
-    content: "/f201";
-    color: black;  
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 20px;
-}
+/* H2 "Les plus populaires" *DESKTOP */
 
 article h2 {
-    padding-left: 3%;
+    padding-left: 30px;
     padding-top: 25px;
 }
 
+h2 {
+    font-size: 22px;
+}
 
 .plus {
-    padding-left: 3%;
-    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-bottom: 33px;
+    padding-top: 10px;
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
@@ -321,8 +346,8 @@ article h2 {
     display: flex; 
     max-width: 100%;
     flex: 1 1 auto;
-    justify-content: space-around;
-    margin: 0%;
+    justify-content: space-between;
+    margin-left: 30px;
 }
 
 .one-card-container {
@@ -331,20 +356,16 @@ article h2 {
     border-radius: 30px;
     padding: 5px;
     background-color: white;
-    margin: 2%;
+    margin: 30px 30px 0 0;
     cursor: pointer;
     width: 400px;
+    max-width: 100%;
     box-shadow: 0px 5px 20px #bfbfbf;
 }
 
 .one-card-container:hover img {
     width: 120%;
 }
-
-.popular-container:hover img {
-    width: 160%;
-}
-
 
 .acco-images {
     box-sizing: border-box;
@@ -371,6 +392,26 @@ article h2 {
     transition-timing-function: ease;
 }
 
+.popular-container:hover img {
+    width: 160%;
+}
+
+/* ASIDE CONTAINER DESKTOP*/
+
+.aside-hi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.chart-icon::before {
+    color: black;  
+    font-weight: 900;
+    font-size: 20px;
+}
 
 .aside-container {
     flex: 1.2;
@@ -380,7 +421,6 @@ article h2 {
     box-sizing: border-box;
     display: block;
 }
-
 
 .popular-container {
     display: flex;
@@ -456,7 +496,7 @@ article h2 {
     bottom: -114px;
 }
 
-/* STAR ICONS DESKTOP */
+/* STAR ICONS ARTICLE + ASIDE DESKTOP */
 
 .checked {
     color: #0065FC;
@@ -640,54 +680,56 @@ img {
     transform: scaleX(-1);
 }
 
-#activities {
-    font-size: 24px;
-}
-
     /* FOOTER DESKTOP*/
 
-#footer-section {
-    display: flex;
+footer {
     background-color: #f2f2f2;
-    padding: 30px 50px 50px 50px;
-    margin-top: 40px;
-}
+} 
 
-.footer-column {
+footer .footer-container {
     display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    padding-right: 340px;     
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 30px 50px 50px 50px;
+    margin-top: 30px;
+    overflow: auto;
+
 }
 
-footer ul li {
+footer .footer-column {
+    flex: 1 1 auto;    
+}
+
+footer .footer-container ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+footer .footer-container ul li {
     text-decoration: none;
     list-style-type: none;
     font-weight: normal;
     cursor: pointer;
-    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+footer .footer-container ul li a {
+    font-weight: 500;
+    font-size: 90%;
+    text-align: left;
 }
 
 ul li:hover {
     color: #0065FC;
 }
 
-footer div h4 {
+footer h3 {
     font-size: 16px;
-}
-
-@media screen and (width: 1440px) {
-    .footer-column {
-        padding-right: 240px;
-        flex: 1 1 auto;
-    }
+    font-weight: 800;
 }
 
 @media screen and (width: 1024px) {
-    .footer-column {
-        padding-right: 140px;
-        flex: 1 1 auto;
-    }
 
     .acco-images img{
         width: 150%;
@@ -695,7 +737,7 @@ footer div h4 {
 
     .card-images img {
         width: 100%;
-        height: 152px;
+        height: 200px;
     }
 
     .card-title {
@@ -703,24 +745,14 @@ footer div h4 {
     }
 }
 
-  /* ***RESPONSIVE DESIGN // *TABLETTE DEVICE*** */
+  /* ***RESPONSIVE DESIGN // *TABLET DEVICE*** */
 
-  @media screen and (min-width: 768px) and (max-width: 992px) {
-    body {
-        max-width: 992px;
-    }
+  @media screen and (min-width: 769px) and (max-width: 992px) {
 
-    /*HEADER *TABLETTE* */
-
-    .nav-list a {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-     /* SECTION 1: "Hebergement a Marseille" *TABLETTE */
+     /* SECTION 1: "Hebergement a Marseille" *TABLET */
 
      #all-containers {
-        flex-direction: column;
+        flex-direction: column-reverse;
         max-width: 100%;
         padding: 0%;
         margin: 0;
@@ -741,30 +773,32 @@ footer div h4 {
     }
 
     .plus {
-        text-align: center;
-        padding-left: 0;
+        padding-left: 50px;
         padding-bottom: 30px;
     }
 
     article h2 {
     padding-left: 50px;
     padding-top: 0px;
-    font-size: 24px;
     }
 
     article h3 {
         font-size: 16px;
     }
 
+    article p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
     aside h2 {
         padding-top: 0px;
         padding-left: 6%; 
         padding-bottom: 0px;
-        font-size: 24px;
     }
     .three-row-containers {
         max-width: 100%;
-        margin: 0 35px;
+        margin: 0 0 0 50px;
     }
 
     .article-container {
@@ -772,7 +806,6 @@ footer div h4 {
         padding: 0;
         background-color: white;
         border-radius: 0;
-        flex-direction: column;
     }
 
     .acco-images {
@@ -787,8 +820,8 @@ footer div h4 {
         object-fit: cover;
     }
 
-    .card-title {
-        margin-top: 0px;
+    .card-title h3{
+        margin-top: 3px;
     }
 
     .card-rating {
@@ -828,16 +861,16 @@ footer div h4 {
         border-bottom-left-radius: 0px;
         }
 
-        .popular-container {
-            border-radius: 30px;
-            margin: 2%;
-            padding-bottom: 15px;
-            width: 111px;
-            cursor: pointer;
-            flex-direction: column;
-            align-items: center;
-            display: block;
-            box-sizing: border-box;
+    .popular-container {
+        border-radius: 30px;
+        margin: 3%;
+        padding-bottom: 15px;
+        width: 111px;
+        cursor: pointer;
+        flex-direction: column;
+        align-items: center;
+        display: block;
+        box-sizing: border-box;
         }
 
         .popular-column-tablette {
@@ -849,10 +882,13 @@ footer div h4 {
         .one-card-container {
             width: 100%;
             border-radius: 30px;
+            margin-right: 50px;
+            margin-top: 25px;
+            margin-bottom: 25px;
         }
 
     
-    /* SECTION 2: "Activites a Marseille" *TABLETTE*/
+    /* SECTION 2: "Activites a Marseille" *TABLET*/
 
     .act-wrapper {
         flex-direction: column;
@@ -880,7 +916,7 @@ footer div h4 {
         flex-direction: row; 
     }
 
-    #activities {
+    h2 {
         font-size: 22px;
     }
 
@@ -918,18 +954,11 @@ footer div h4 {
         width: 100%;
     }
 
-    /* FOOTER *TABLETTE*/
-
-
-.footer-column {
-    padding-right: 50px;     
-}
-
 }
 
   /* *** RESPONSIVE DESIGN: *MOBILE*** */
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
    
     body {
         padding: 0;
@@ -943,51 +972,31 @@ footer div h4 {
 
     /* HEADER *MOBILE */
 
-    header {
-        border-bottom: 4px solid #F2F2F2;
-        padding: 0 0 15px 0;
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-        
-    }
-
-    nav{
+    header .container {
         flex-direction: column;
         align-items: center;
+        padding: 0;
+      }
+
+    header .container nav ul {
+        padding: 0 0;
     }
 
-    .nav-list a {
-        font-size: 16px;
-        font-weight: 500;
-        padding-left: 50px;
-        padding-right: 50px;
-        overflow: hidden;
-    }
+    header nav {
+        width: 100%;
+        margin-bottom: 30px;
+      }
 
-    nav li {
-        padding-top: 20px;
-    }
+    header nav ul li {
+        flex-grow: 6;
+        width: 100%;
+      }
 
-    ul li {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    nav ul a:hover {
-        color:#0065FC;
-        border-bottom: 4px solid #0065FC;
-        padding: 0 50px 15px 50px;
-        border-top: none;
-    }
-
-     /* LOGO *MOBILE */
-
-    #logo {
-        height: 70px;
-        padding: 10px;
-        margin-left: 50px;
-    }
+    header .container nav ul li a {
+        padding-top: 0;
+        border-top: inherit;
+        border-bottom: 3px solid #F2F2F2;
+      }
 
     /* FIRST DIVISION *MOBILE */
 
@@ -1012,14 +1021,14 @@ footer div h4 {
 
     .search-container {
         margin: 0 auto;
-        overflow: hidden;
+        overflow: visible;
         width: 100%;
         }
 
     .search-box {
         border: 10px;
         margin: 3px 0px;
-        flex: 1;
+        flex: 1 1 auto;
         }
 
     .button-text {
@@ -1028,7 +1037,6 @@ footer div h4 {
   
     .search-button {
         background: #0065FC;
-        z-index: 1;
         text-overflow: inherit;
         position: relative;
         border-color: #0065FC;
@@ -1091,7 +1099,6 @@ footer div h4 {
     }
 
     .info-icon::before {
-        content: "/f05a";
         color: #0065FC;
         border: 2px solid #ededed;
         border-radius: 120px;
@@ -1102,7 +1109,9 @@ footer div h4 {
 
      #all-containers {
          flex-direction: column-reverse;
-         margin: 0px;
+         margin-right: 0px;
+         margin-left: 0px;
+         margin-top: 0;
      }
 
      .plus {
@@ -1122,33 +1131,29 @@ footer div h4 {
      .aside-hi {
          padding-top: 15px;
          padding-bottom: 5px;
-         margin-left: 0px;
+         margin-left: 20px;
          margin-right: 20px;
      }
 
-     .popular-column-tablette {
-         padding-bottom: 20px;
-     }
-
      h3 {
-         margin-top: 15px;
-         margin-bottom: 15px;
+         margin-top: 19px;
+         margin-bottom: 19px;
      }
 
      aside h3 {
          margin-top: 10px;
+         font-weight: 700;
      }
 
      .aside-container {
          width: 100%;
          margin: 3% 0;
-         border-radius: 0px;
+         border-radius: 0;
      }
 
      article h2 {
         padding-left: 20px;
         padding-top: 0px;
-        font-size: 20px;
      }
 
      aside h2 {
@@ -1159,20 +1164,22 @@ footer div h4 {
 
      .three-row-containers {
          flex-direction: column;
-         margin: 0%;
+         margin-left: 18px;
+         margin-right: 18px;
      }
 
      .acco-images {
          flex: auto;
-         border-top-right-radius: 20px;
-         border-top-left-radius: 20px;
+         border-top-right-radius: 15px;
+         border-top-left-radius: 15px;
          height: 117px;
          width: 100%;
      }
 
      .card-exerpt-acco {
          margin-top: -13px;
-         font-size: 14px;
+         font-size: 15px;
+         font-weight: 500;
      }
 
      .card-rating-acco {
@@ -1182,11 +1189,6 @@ footer div h4 {
      .card-title-acco {
          margin-top: -10px;
          font-size: 15px;
-     }
-
-     .card-exerpt {
-         margin-bottom: 0px;
-         margin-top: 0px;
      }
 
      aside h3 {
@@ -1203,9 +1205,9 @@ footer div h4 {
 
      .card-images {
         height: 145px;
-        width: 135px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        width: 48%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
      }
 
      .card-title {
@@ -1217,19 +1219,18 @@ footer div h4 {
      }
 
      .popular-container {
-        border-radius: 20px;
+        border-radius: 15px;
         margin-left: 20px;
         margin-right: 20px;
         margin-top: 5px;
         margin-bottom: 20px;
      }
 
-
      .one-card-container {
-         width: 90%;
-         border-radius: 20px;
-         margin-left: 20px;
-         margin-right: 20px;
+        border-radius: 15px;
+        width: 100%;
+        margin: 20px 20px 0 0;
+
      }
 
      /* STAR ICONS *MOBILE */
@@ -1261,6 +1262,8 @@ footer div h4 {
 
      .tall-image {
         height: 130px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
      }
 
      #activity h2 {
@@ -1272,24 +1275,32 @@ footer div h4 {
     }
 
      .name-item {
-         margin-left: 30px;
+         margin-left: 20px;
          font-size: 15px;
      }
 
      .two-image {
         height: 130px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
      }
 
      .three-image {
         height: 130px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
      }
 
      .four-image {
         height: 130px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
      }
 
      .five-image {
         height: 130px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
      }
 
      #act-title {
@@ -1297,29 +1308,15 @@ footer div h4 {
      }
 
      .act-column > div {
-        border-radius: 20px;
+        border-radius: 15px;
     }
 
         /* FOOTER MOBILE */
 
-         #footer-section {
-             flex-direction: column;
-             padding: 20px;
-         }
-
-         .footer-column {
-             padding: 0px 5px;
-             margin-bottom: 10px;
-             margin-top: 6px;
-         }
-
-         .footer-column h4 {
-             font-size: 18px;
-         }
-
-         ul li {
-             padding-right: 0px;
-         }
+        footer .footer-container {
+            flex-direction: column;
+            padding-left: 20px;
+          }
     }
 
 
