@@ -735,7 +735,7 @@ footer h3 {
 @media screen and (width: 1024px) {
 
     .acco-images img{
-        width: 150%;
+        width: 160%;
     }
 
     .card-images img {
@@ -874,6 +874,7 @@ footer h3 {
         align-items: center;
         display: block;
         box-sizing: border-box;
+        padding-right: 5px;
         }
 
         .popular-column-tablette {
