@@ -5,14 +5,14 @@ Assuming that this is my first traning as a junior front-end at Booki, a small b
 
 Objectives :
 Implementing a responsive interface
-Integrate the content conforming to the visual models
+Integrate the content conforming to the given visual models
 
 Sources :
 Brief
 Maquette
 
 Github Page :
-Booki - Preview - Comming Soon
+Booki - Preview - Coming Soon
 
 Author :
 Filiz Hakan
