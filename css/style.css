@@ -116,12 +116,13 @@ h1 {
 
   .search-container {
     display: inline-flex;
-    flex: 1 1 300px;
+    flex: 0 0  auto;
     position: relative;
     border: 2px solid #f2f2f2;
     border-radius: 20px;
     overflow: visible;
-    margin: 15px 0;
+    margin: 10px 0 20px 0;
+    max-width: 100%;
   }
 
   form i {
@@ -142,9 +143,11 @@ h1 {
   
   .search-box {
     border: 0;
-    padding: 0 16px;
+    padding: 0 10px;
+    width: 100%;
     flex: 1;
     background-color: transparent;
+    outline: none;
   }
 
   .search-button i {
@@ -787,6 +790,7 @@ footer h3 {
 
     article h3 {
         font-size: 16px;
+        margin-top: inherit;
     }
 
     article p {
@@ -924,22 +928,26 @@ footer h3 {
         font-size: 22px;
     }
 
+    h3 {
+        margin-top: 15px;
+    }
+
     .act-column > div {
         border-radius: 20px;
     }
 
     .tall-image {
-        height: 230px;
+        height: 200px;
         top: 100%;
     }
 
     .two-image {
-        height: 230px;
+        height: 200px;
         top: 100%;
     }
 
     .three-image {
-        height: 230px;
+        height: 200px;
         top: 50%;
     }
 
@@ -948,12 +956,12 @@ footer h3 {
     }
 
     .four-image {
-        height: 230px;
+        height: 200px;
         top: 100%;
     }
 
     .five-image {
-        height: 230px;
+        height: 200px;
         top: 100%;
         width: 100%;
     }
@@ -971,7 +979,8 @@ footer h3 {
     }
 
     .first-div {
-        padding: 10px 20px;
+        padding: 0px;
+        margin: 20px;
     }
 
     /* HEADER *MOBILE */
@@ -1001,12 +1010,6 @@ footer h3 {
         border-top: inherit;
         border-bottom: 3px solid #F2F2F2;
       }
-
-    /* FIRST DIVISION *MOBILE */
-
-    .first-div {
-        margin: 0px;
-    }
 
     /* H1 MOBILE */
 
