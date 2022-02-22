@@ -682,27 +682,26 @@ footer {
     background-color: #f2f2f2;
 } 
 
-footer .footer-container {
+.footer-container {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     padding: 30px 50px 50px 50px;
     margin-top: 30px;
     overflow: auto;
-
 }
 
-footer .footer-column {
+.footer-column {
     flex: 1 1 auto;    
 }
 
-footer .footer-container ul {
+.footer-container ul {
     padding: 0;
     margin: 0;
     margin-bottom: 15px;
 }
 
-footer .footer-container ul li {
+.footer-container ul li {
     text-decoration: none;
     list-style-type: none;
     font-weight: normal;
@@ -710,7 +709,7 @@ footer .footer-container ul li {
     margin-bottom: 10px;
 }
 
-footer .footer-container ul li a {
+.footer-container ul li a {
     font-weight: 500;
     font-size: 90%;
     text-align: left;
@@ -855,13 +854,13 @@ footer h3 {
         padding-right: 5px;
         }
 
-        .popular-column-tablette {
+    .popular-column-tablette {
             display: flex;
             flex: auto;
             margin: 0% 4% 4% 4%;
         }
 
-        .one-card-container {
+    .one-card-container {
             width: 100%;
             border-radius: 30px;
             margin-right: 50px;
@@ -1042,7 +1041,7 @@ footer h3 {
         padding: 16px 19px 16px 19px;
           }
 
-       /* FILTERS *MOBILE */
+    /* FILTERS *MOBILE */
 
     #filter-container {
         width: 100%;
@@ -1235,7 +1234,7 @@ footer h3 {
         margin-right: -1px;
     }
 
-        /* SECTION 2 "Activites a Marseille" *MOBILE */
+    /* SECTION 2 "Activites a Marseille" *MOBILE */
 
      .act-wrapper {
         flex-direction: column;
@@ -1299,12 +1298,12 @@ footer h3 {
         border-radius: 15px;
     }
 
-        /* FOOTER MOBILE */
+    /* FOOTER MOBILE */
 
-        footer .footer-container {
-            flex-direction: column;
-            padding-left: 20px;
-          }
+    .footer-container {
+        flex-direction: column;
+        padding-left: 20px;
+    }
     }
 
 
